@@ -31,7 +31,7 @@
 
 ```text
 package.json          # dsh.bundle.patch 指向 cordis.patch.yml
-cordis.patch.yml      # 插入 id 为 sci-agent-skills 的 host 插件行
+cordis.patch.yml      # 插入 id 为 sci-agent 的 host 插件行
 lib/index.js          # 技能 provider：从 assets/skills 读取 SKILL.md
 assets/skills/        # 6 个领域技能
 locale/{zh,en}.json   # 插件页显示名与描述

@@ -52,28 +52,21 @@ const commitSeconds = Number(git('show', '-s', '--format=%ct', commit))
 const rawBase = `https://raw.githubusercontent.com/${repo.replace(/^https:\/\/github\.com\//u, '')}/${ref}/`
 
 const categories = {
-  'bohr-product-arena': { title: { en: 'Bohr Product Arena playbooks', zh: '玻尔产品周赛打法' } },
-  'scientific-facilities': { title: { en: 'Scientific Facilities contest playbooks', zh: '大科学装置专项赛打法' } },
+  'scientific-agent-skills': { title: { en: 'Scientific agent skills', zh: '科研 Agent 技能' } },
 }
 const labels = {
+  'literature-reading': { title: { en: 'Literature reading', zh: '文献阅读' } },
   'academic-writing': { title: { en: 'Academic writing', zh: '学术写作' } },
-  'academic-efficiency': { title: { en: 'Academic efficiency', zh: '学术效率' } },
-  'format-parsing': { title: { en: 'Format parsing', zh: '科学数据格式解析' } },
-  'instrument-vision': { title: { en: 'Instrument vision & simulation', zh: '仪器视觉与模拟' } },
-  'bio-prediction': { title: { en: 'Biomedical prediction', zh: '生物医学预测' } },
-  'contest-ops': { title: { en: 'Contest operations', zh: '平台参赛作战' } },
+  'scientific-figures': { title: { en: 'Scientific figures', zh: '科研图形' } },
+  'presentations': { title: { en: 'Presentations', zh: '学术演示' } },
+  'agent-pipelines': { title: { en: 'Agent pipelines', zh: 'Agent 流水线' } },
 }
 const sortKey = { title: { en: 'Listing order', zh: '推荐顺序' }, order: 'asc' }
 
 /** Map a plugin directory to its market category and labels. */
 function classify(dir) {
-  if (dir.startsWith('dsh-bohr-arena-p2')) return { category: 'bohr-product-arena', labels: ['academic-writing'] }
-  if (dir.startsWith('dsh-bohr-arena-p3')) return { category: 'bohr-product-arena', labels: ['academic-efficiency'] }
-  if (dir.includes('format-parsing')) return { category: 'scientific-facilities', labels: ['format-parsing'] }
-  if (dir.includes('instrument-vision')) return { category: 'scientific-facilities', labels: ['instrument-vision'] }
-  if (dir.includes('bio-prediction')) return { category: 'scientific-facilities', labels: ['bio-prediction'] }
-  if (dir.includes('contest-ops')) return { category: 'scientific-facilities', labels: ['contest-ops'] }
-  return { category: 'scientific-facilities', labels: [] }
+  if (dir.includes('sci-agent')) return { category: 'scientific-agent-skills', labels: ['agent-pipelines'] }
+  return { category: 'scientific-agent-skills', labels: [] }
 }
 
 const pluginsDir = join(ROOT, 'plugins')
@@ -99,7 +92,7 @@ for (const dir of names) {
     title: { en: en.title ?? pkg.name, zh: zh.title ?? pkg.name },
     description: { en: en.description ?? pkg.description ?? '', zh: zh.description ?? pkg.description ?? '' },
     ...(hasIcon ? { icon: `${rawBase}plugins/${dir}/icon.svg` } : {}),
-    author: 'Bohr Product Arena Playbook',
+    author: 'sci-agent',
     repository: { url: repo, directory: `plugins/${dir}` },
     metadata: {
       category,
@@ -126,12 +119,12 @@ for (const dir of names) {
 const index = {
   format: 1,
   title: {
-    en: 'Bohr contest experience plugins',
-    zh: '玻尔比赛经验插件',
+    en: 'sci-agent — Scientific Agent Skills',
+    zh: 'sci-agent — 科研 Agent 技能',
   },
   description: {
-    en: 'DSH plugins that preserve practical contest playbooks: Bohr Product Arena academic writing (period 2) and academic efficiency (period 3), plus Scientific Facilities format parsing, instrument vision/simulation, biomedical prediction, and contest operations.',
-    zh: '把玻尔产品周赛（第二期学术写作、第三期学术效率）与大科学装置专项赛（格式解析、仪器视觉与模拟、生物医学预测、平台作战）的实操经验沉淀为可分发的 DSH 插件。',
+    en: 'Scientific agent skills as a DSH plugin: literature reading, academic writing, scientific figures, academic presentations, skill design, and agent pipelines.',
+    zh: '科研 Agent 技能插件：文献阅读、学术写作、科研图形、学术演示、Skill 设计与 Agent 流水线的可复用经验。',
   },
   metadata: {
     categories,
