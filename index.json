@@ -105,11 +105,11 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1795514771,
+          "publishTimestamp": 1795514865,
           "source": {
             "type": "git",
             "url": "https://github.com/Richard-He-happy/sci-agent",
-            "commit": "2591d126f818c0c795dc376c95fa56e5855e7d69",
+            "commit": "1a069b4fdb999d305a3c9390b082618d1a2ab8bd",
             "path": "plugins/sci-agent"
           }
         }
