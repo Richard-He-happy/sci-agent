@@ -44,6 +44,12 @@ const ENTRIES = [
       '学术演示方法论：论文转汇报幻灯片、汇报内容组织、模板与格式适配——页级主张、证据定位、导出校验与可编辑性。当需要制作学术 PPT 时使用。',
   },
   {
+    dir: 'sci-workbench',
+    name: 'sci-workbench',
+    description:
+      '阅读/写作工作台与评测工具方法论：客户端会话闭环（定位、批注、修订、回执、版本、导出）与 Benchmark 评测体系（题卡、运行器、评分表、可追溯报告）。当需要做文献/写作工作台或科研评测工具时使用。',
+  },
+  {
     dir: 'sci-agent-pipelines',
     name: 'sci-agent-pipelines',
     description:

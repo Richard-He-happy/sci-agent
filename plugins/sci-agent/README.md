@@ -1,6 +1,6 @@
 # sci-agent — 科研 Agent 技能经验（通用/公开）
 
-面向**真实科研工作**的 Agent 技能经验包：把文献阅读、学术写作、科研图形、学术演示四大板块的可靠做法，以及"如何把科研流程沉淀成可复核 Skill / 流水线"的规范，注册为 6 个技能。安装后由 Agent 按需加载，不额外占用上下文。
+面向**真实科研工作**的 Agent 技能经验包：把文献阅读、学术写作、科研图形、学术演示四大板块的可靠做法，以及阅读/写作工作台、评测工具与流水线的规范，注册为 7 个技能。安装后由 Agent 按需加载，不额外占用上下文。
 
 > 本插件只包含**可迁移到真实科研工作**的方法与规范；竞赛得分/额度/排名类经验在私有配套仓库，不在此发布。
 
@@ -13,6 +13,7 @@
 | `sci-academic-writing` | 学术写作：章节、结构逻辑、结果讨论、审稿回复、翻译双语、基金/开题、长文档一致性 |
 | `sci-figures` | 科研图形：示意图/机制图/装置图/数据图/图形摘要；可编辑 SVG + 真实 PDF + 证据映射 + 字体陷阱 |
 | `sci-presentations` | 学术演示：论文转 PPT、汇报组织、模板适配；页级主张、来源定位、导出校验 |
+| `sci-workbench` | 阅读/写作工作台与评测工具：客户端会话闭环 + Benchmark（题卡、运行器、评分表、可追溯报告） |
 | `sci-agent-pipelines` | 用 Agent 批量构建科研技能与自动化流水线：任务书、打包白名单、确定性自检、回退与恢复 |
 
 ## 设计原则
@@ -33,7 +34,7 @@
 package.json          # dsh.bundle.patch 指向 cordis.patch.yml
 cordis.patch.yml      # 插入 id 为 sci-agent 的 host 插件行
 lib/index.js          # 技能 provider：从 assets/skills 读取 SKILL.md
-assets/skills/        # 6 个领域技能
+assets/skills/        # 7 个领域技能
 locale/{zh,en}.json   # 插件页显示名与描述
 icon.svg
 ```

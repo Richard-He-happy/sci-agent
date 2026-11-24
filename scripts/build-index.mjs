@@ -60,12 +60,13 @@ const labels = {
   'scientific-figures': { title: { en: 'Scientific figures', zh: '科研图形' } },
   'presentations': { title: { en: 'Presentations', zh: '学术演示' } },
   'agent-pipelines': { title: { en: 'Agent pipelines', zh: 'Agent 流水线' } },
+  'workbench': { title: { en: 'Workbench & evaluation', zh: '工作台与评测' } },
 }
 const sortKey = { title: { en: 'Listing order', zh: '推荐顺序' }, order: 'asc' }
 
 /** Map a plugin directory to its market category and labels. */
 function classify(dir) {
-  if (dir.includes('sci-agent')) return { category: 'scientific-agent-skills', labels: ['agent-pipelines'] }
+  if (dir.includes('sci-agent')) return { category: 'scientific-agent-skills', labels: ['workbench', 'agent-pipelines'] }
   return { category: 'scientific-agent-skills', labels: [] }
 }
 
