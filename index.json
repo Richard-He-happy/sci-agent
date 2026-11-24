@@ -47,6 +47,12 @@
           "en": "Agent pipelines",
           "zh": "Agent 流水线"
         }
+      },
+      "workbench": {
+        "title": {
+          "en": "Workbench & evaluation",
+          "zh": "工作台与评测"
+        }
       }
     },
     "sortKeys": {
@@ -67,8 +73,8 @@
         "zh": "sci-agent — 科研 Agent 技能经验"
       },
       "description": {
-        "en": "Practical, real-world guidance for scientific agent work: literature reading, academic writing, scientific figures, academic presentations, plus patterns for building reliable scientific skills and cloud pipelines.",
-        "zh": "面向真实科研任务的技能经验：文献阅读、学术写作、科研图形、学术演示四大板块，以及可靠 Skill 与云端流水线的构建规范。"
+        "en": "Practical guidance for scientific agent work: literature reading, academic writing, scientific figures, academic presentations, plus workbench/evaluation tooling and patterns for building reliable scientific skills and cloud pipelines.",
+        "zh": "面向真实科研任务的技能经验：文献阅读、学术写作、科研图形、学术演示四大板块，以及工作台与评测工具、可靠 Skill 与云端流水线的构建规范。"
       },
       "icon": "https://raw.githubusercontent.com/Richard-He-happy/sci-agent/main/plugins/sci-agent/icon.svg",
       "author": "sci-agent",
@@ -89,6 +95,7 @@
           "agent-skills"
         ],
         "labels": [
+          "workbench",
           "agent-pipelines"
         ],
         "sortKeys": {
@@ -98,11 +105,11 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1795514330,
+          "publishTimestamp": 1795514771,
           "source": {
             "type": "git",
             "url": "https://github.com/Richard-He-happy/sci-agent",
-            "commit": "5073815be593aec563d48400113bfbfac3a1f83b",
+            "commit": "2591d126f818c0c795dc376c95fa56e5855e7d69",
             "path": "plugins/sci-agent"
           }
         }
