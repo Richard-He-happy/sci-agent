@@ -56,7 +56,7 @@ plugins/sci-agent/    # 公开插件
   ├── package.json               # dsh.bundle.patch → cordis.patch.yml
   ├── cordis.patch.yml
   ├── lib/index.js               # 技能 provider
-  ├── assets/skills/             # 6 个领域技能
+  ├── assets/skills/             # 7 个领域技能
   ├── locale/{zh,en}.json
   ├── icon.svg
   └── README.md
