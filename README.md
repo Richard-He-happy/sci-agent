@@ -71,3 +71,11 @@ plugins/sci-agent/    # 公开插件
 ## 七、许可
 
 MIT，见 `LICENSE`。
+
+## 新增：竞赛作战与 Agent 运维（2026-11 P4 沉淀）
+
+- `sci-competition-arena`：限时科研 Agent 技能竞赛方法论（赛制/额度/节奏/排名）
+- `sci-adversarial-skill-generation`：对抗式生成 + 异构评委 + 门槛门控的多轮提分流水线
+- `sci-skill-submission-ops`：提交与评测运维（preflight、429/去重/超时、attempt 状态机、队列停滞诊断）
+- `sci-dual-agent-collaboration`：双 Agent/双账号协同协议（分工、差异包、INBOX、cleared 清单、终分互报）
+

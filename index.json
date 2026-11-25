@@ -5,8 +5,8 @@
     "zh": "sci-agent — 科研 Agent 技能"
   },
   "description": {
-    "en": "Scientific agent skills as a DSH plugin: literature reading, academic writing, scientific figures, academic presentations, skill design, and agent pipelines.",
-    "zh": "科研 Agent 技能插件：文献阅读、学术写作、科研图形、学术演示、Skill 设计与 Agent 流水线的可复用经验。"
+    "en": "Scientific agent skills as a DSH plugin: literature reading, academic writing, scientific figures, academic presentations, skill design, agent pipelines, competition-arena operations, adversarial skill generation, submission ops, and dual-agent collaboration.",
+    "zh": "科研 Agent 技能插件：文献阅读、学术写作、科研图形、学术演示、Skill 设计、Agent 流水线，以及竞赛作战、对抗式生成、提交运维与双 Agent 协同。"
   },
   "metadata": {
     "categories": {
@@ -53,6 +53,30 @@
           "en": "Workbench & evaluation",
           "zh": "工作台与评测"
         }
+      },
+      "competition-arena": {
+        "title": {
+          "en": "Competition arena operations",
+          "zh": "竞赛作战"
+        }
+      },
+      "adversarial-generation": {
+        "title": {
+          "en": "Adversarial skill generation",
+          "zh": "对抗式生成"
+        }
+      },
+      "submission-ops": {
+        "title": {
+          "en": "Submission and evaluation ops",
+          "zh": "提交与评测运维"
+        }
+      },
+      "collaboration": {
+        "title": {
+          "en": "Multi-agent collaboration",
+          "zh": "多 Agent 协同"
+        }
       }
     },
     "sortKeys": {
@@ -73,8 +97,8 @@
         "zh": "sci-agent — 科研 Agent 技能经验"
       },
       "description": {
-        "en": "Practical guidance for scientific agent work: literature reading, academic writing, scientific figures, academic presentations, plus workbench/evaluation tooling and patterns for building reliable scientific skills and cloud pipelines.",
-        "zh": "面向真实科研任务的技能经验：文献阅读、学术写作、科研图形、学术演示四大板块，以及工作台与评测工具、可靠 Skill 与云端流水线的构建规范。"
+        "en": "Practical guidance for scientific agent work: literature reading, academic writing, figures, presentations, plus workbench/evaluation tooling, reliable skill & cloud pipelines, competition-arena operations, adversarial generation, submission ops, and dual-agent collaboration.",
+        "zh": "面向真实科研任务的技能经验：文献阅读、学术写作、科研图形、学术演示四大板块，以及工作台与评测工具、可靠 Skill 与云端流水线，并新增竞赛作战、对抗式生成、提交运维、双 Agent 协同。"
       },
       "icon": "https://raw.githubusercontent.com/Richard-He-happy/sci-agent/main/plugins/sci-agent/icon.svg",
       "author": "sci-agent",
@@ -92,11 +116,19 @@
           "academic-writing",
           "scientific-figures",
           "academic-presentations",
-          "agent-skills"
+          "agent-skills",
+          "competition-arena",
+          "adversarial-generation",
+          "submission-ops",
+          "collaboration"
         ],
         "labels": [
           "workbench",
-          "agent-pipelines"
+          "agent-pipelines",
+          "competition-arena",
+          "adversarial-generation",
+          "submission-ops",
+          "collaboration"
         ],
         "sortKeys": {
           "order": 10

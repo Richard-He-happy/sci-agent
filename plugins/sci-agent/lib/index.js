@@ -55,6 +55,30 @@ const ENTRIES = [
     description:
       '用 Agent 批量构建科研技能与自动化流水线：任务书设计、云端/本地协作、打包白名单、确定性自检、版本回退与故障恢复。当需要把科研工作流批量化、自动化时使用。',
   },
+  {
+    dir: 'sci-competition-arena',
+    name: 'sci-competition-arena',
+    description:
+      '科研 Agent 技能竞赛方法论：赛制与额度约束、赛前基线与选题、节奏分配、评分口径与排名计算、限时提交运维。当参加或组织限时科研 Agent 技能竞赛时使用。',
+  },
+  {
+    dir: 'sci-adversarial-skill-generation',
+    name: 'sci-adversarial-skill-generation',
+    description:
+      '对抗式 Agent Skill 生成与评测：多候选生成、异构评委、门槛门控、弱点回喂、多轮进化与收敛。当需要在有限时间批量提升 Skill 质量时使用。',
+  },
+  {
+    dir: 'sci-skill-submission-ops',
+    name: 'sci-skill-submission-ops',
+    description:
+      'Skill 包提交与评测运维：preflight 门禁、trace 与单根布局、额度与 429/去重/超时处理、attempt 状态机、队列停滞诊断与投递台账。当稳定可审计地批量提交时使用。',
+  },
+  {
+    dir: 'sci-dual-agent-collaboration',
+    name: 'sci-dual-agent-collaboration',
+    description:
+      '双 Agent/双账号协同协议：分工矩阵、差异化交付包、文件式 INBOX、cleared 清单门控、终分互报。当两个执行体协作限时项目/竞赛时使用。',
+  },
 ]
 
 /** Strip a leading YAML frontmatter block; the body alone is rendered to the model. */
