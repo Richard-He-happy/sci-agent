@@ -72,10 +72,15 @@ plugins/sci-agent/    # 公开插件
 
 MIT，见 `LICENSE`。
 
-## 新增：竞赛作战与 Agent 运维（2026-11 P4 沉淀）
+## 新增：P4 场景技能（2026-11 沉淀，均为"应用场景"而非得分技巧）
 
-- `sci-competition-arena`：限时科研 Agent 技能竞赛方法论（赛制/额度/节奏/排名）
-- `sci-adversarial-skill-generation`：对抗式生成 + 异构评委 + 门槛门控的多轮提分流水线
-- `sci-skill-submission-ops`：提交与评测运维（preflight、429/去重/超时、attempt 状态机、队列停滞诊断）
-- `sci-dual-agent-collaboration`：双 Agent/双账号协同协议（分工、差异包、INBOX、cleared 清单、终分互报）
+- `sci-literature-reading-extraction`：文献解析/图表/结论数据提取/证据溯源/公式/多文档/复现/清洗/知识图谱
+- `sci-literature-search-systematic`：学术检索/多库/筛选排序/引文追踪/覆盖分析/系统综述检索/跨语言/专利
+- `sci-knowledge-library-ops`：文件管理/智能检索/自动分类/知识库问答/批注沉淀
+- `sci-data-analysis-pipeline`：数据清洗/统计/可视化/代码执行/多步骤分析/数据库查询
+- `sci-experiment-design-analysis`：方案生成/可行性/参数优化/方案比较/结果解释与异常分析
+- `sci-research-synthesis-review`：综述/系统综述/趋势/选题 + 论文质量/引用/方法统计/逻辑/合规审查
+- `sci-academic-writing-workflow`：写作/润色/模板/引用/章节/审稿回复/翻译/LaTeX/基金/长文档/思维导图
+- `sci-paper-to-slides-deck`：论文转 PPT / PPT 生成编辑 / 汇报组织 / 模板适配
 
+> 说明：竞赛得分技巧（额度/429/写回停滞/双账号协同等）不放在本公开仓库，存于私有仓库 `dsh-bohr-arena-private`。

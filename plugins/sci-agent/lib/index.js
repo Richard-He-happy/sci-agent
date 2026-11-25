@@ -54,31 +54,55 @@ const ENTRIES = [
     name: 'sci-agent-pipelines',
     description:
       '用 Agent 批量构建科研技能与自动化流水线：任务书设计、云端/本地协作、打包白名单、确定性自检、版本回退与故障恢复。当需要把科研工作流批量化、自动化时使用。',
+  },,
+  {
+    dir: 'sci-literature-reading-extraction',
+    name: 'sci-literature-reading-extraction',
+    description:
+      '文献阅读与信息抽取：文档/图表解析、结论与数据提取、证据溯源、公式解析、多文档比较、结构化笔记、方法复现、数据清洗、知识图谱。当需要稳定产出可核验信息时使用。',
   },
   {
-    dir: 'sci-competition-arena',
-    name: 'sci-competition-arena',
+    dir: 'sci-literature-search-systematic',
+    name: 'sci-literature-search-systematic',
     description:
-      '科研 Agent 技能竞赛方法论：赛制与额度约束、赛前基线与选题、节奏分配、评分口径与排名计算、限时提交运维。当参加或组织限时科研 Agent 技能竞赛时使用。',
+      '文献检索与筛选：学术检索、问题驱动检索、筛选排序、引文追踪、多库联合、覆盖与遗漏分析、系统检索纳排、质量评价、跨语言与专利检索。当需要可复现检索与证据清单时使用。',
   },
   {
-    dir: 'sci-adversarial-skill-generation',
-    name: 'sci-adversarial-skill-generation',
+    dir: 'sci-knowledge-library-ops',
+    name: 'sci-knowledge-library-ops',
     description:
-      '对抗式 Agent Skill 生成与评测：多候选生成、异构评委、门槛门控、弱点回喂、多轮进化与收敛。当需要在有限时间批量提升 Skill 质量时使用。',
+      '科研知识库与资料管理：文件管理、智能检索、自动分类、知识库问答、批注与知识沉淀。当需要组织科研资料并支持可追溯检索/问答时使用。',
   },
   {
-    dir: 'sci-skill-submission-ops',
-    name: 'sci-skill-submission-ops',
+    dir: 'sci-data-analysis-pipeline',
+    name: 'sci-data-analysis-pipeline',
     description:
-      'Skill 包提交与评测运维：preflight 门禁、trace 与单根布局、额度与 429/去重/超时处理、attempt 状态机、队列停滞诊断与投递台账。当稳定可审计地批量提交时使用。',
+      '科研数据分析：数据清洗、统计分析与解读、可视化、代码生成执行、多步骤分析、数据库查询。当需要可复现地从数据得到结论与图表时使用。',
   },
   {
-    dir: 'sci-dual-agent-collaboration',
-    name: 'sci-dual-agent-collaboration',
+    dir: 'sci-experiment-design-analysis',
+    name: 'sci-experiment-design-analysis',
     description:
-      '双 Agent/双账号协同协议：分工矩阵、差异化交付包、文件式 INBOX、cleared 清单门控、终分互报。当两个执行体协作限时项目/竞赛时使用。',
+      '实验方案与参数优化：方案生成、可行性评估、参数优化建议、方案比较、结果解释与异常分析。当需要设计/评估/优化实验方案时使用。',
   },
+  {
+    dir: 'sci-research-synthesis-review',
+    name: 'sci-research-synthesis-review',
+    description:
+      '研究综合与审查：综述/系统综述、前沿趋势、选题评估，以及论文质量、引用、方法统计、逻辑与合规审查。当需要从文献产生综合判断与审查意见时使用。',
+  },
+  {
+    dir: 'sci-academic-writing-workflow',
+    name: 'sci-academic-writing-workflow',
+    description:
+      '学术写作全流程：论文写作、润色、格式模板、引用管理、章节写作、审稿回复、翻译双语、LaTeX、基金/开题、长文档、思维导图。当需要产出或修改学术文本时使用。',
+  },
+  {
+    dir: 'sci-paper-to-slides-deck',
+    name: 'sci-paper-to-slides-deck',
+    description:
+      '学术演示与 PPT：论文转 PPT、PPT 生成编辑、汇报组织、模板适配。当需要把论文变成可讲可交付演示文稿时使用。',
+  }
 ]
 
 /** Strip a leading YAML frontmatter block; the body alone is rendered to the model. */

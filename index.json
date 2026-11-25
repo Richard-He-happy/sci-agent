@@ -5,8 +5,8 @@
     "zh": "sci-agent — 科研 Agent 技能"
   },
   "description": {
-    "en": "Scientific agent skills as a DSH plugin: literature reading, academic writing, scientific figures, academic presentations, skill design, agent pipelines, competition-arena operations, adversarial skill generation, submission ops, and dual-agent collaboration.",
-    "zh": "科研 Agent 技能插件：文献阅读、学术写作、科研图形、学术演示、Skill 设计、Agent 流水线，以及竞赛作战、对抗式生成、提交运维与双 Agent 协同。"
+    "en": "Scientific agent skills as a DSH plugin: literature reading & extraction, systematic literature search, knowledge library ops, data analysis, experiment design, research synthesis & review, academic writing workflow, paper-to-slides, plus skill design and agent pipelines.",
+    "zh": "科研 Agent 技能插件：文献阅读与抽取、系统文献检索、知识库运维、数据分析、实验设计与分析、研究综合与审查、学术写作全流程、论文转 PPT，以及 Skill 设计与 Agent 流水线。"
   },
   "metadata": {
     "categories": {
@@ -54,28 +54,52 @@
           "zh": "工作台与评测"
         }
       },
-      "competition-arena": {
+      "literature-extraction": {
         "title": {
-          "en": "Competition arena operations",
-          "zh": "竞赛作战"
+          "en": "Literature extraction",
+          "zh": "文献抽取"
         }
       },
-      "adversarial-generation": {
+      "systematic-search": {
         "title": {
-          "en": "Adversarial skill generation",
-          "zh": "对抗式生成"
+          "en": "Systematic search",
+          "zh": "系统检索"
         }
       },
-      "submission-ops": {
+      "knowledge-library": {
         "title": {
-          "en": "Submission and evaluation ops",
-          "zh": "提交与评测运维"
+          "en": "Knowledge library",
+          "zh": "知识库"
         }
       },
-      "collaboration": {
+      "data-analysis": {
         "title": {
-          "en": "Multi-agent collaboration",
-          "zh": "多 Agent 协同"
+          "en": "Data analysis",
+          "zh": "数据分析"
+        }
+      },
+      "experiment-design": {
+        "title": {
+          "en": "Experiment design",
+          "zh": "实验设计"
+        }
+      },
+      "research-synthesis": {
+        "title": {
+          "en": "Research synthesis & review",
+          "zh": "研究综合与审查"
+        }
+      },
+      "writing-workflow": {
+        "title": {
+          "en": "Writing workflow",
+          "zh": "写作全流程"
+        }
+      },
+      "paper-to-slides": {
+        "title": {
+          "en": "Paper to slides",
+          "zh": "论文转 PPT"
         }
       }
     },
@@ -97,8 +121,8 @@
         "zh": "sci-agent — 科研 Agent 技能经验"
       },
       "description": {
-        "en": "Practical guidance for scientific agent work: literature reading, academic writing, figures, presentations, plus workbench/evaluation tooling, reliable skill & cloud pipelines, competition-arena operations, adversarial generation, submission ops, and dual-agent collaboration.",
-        "zh": "面向真实科研任务的技能经验：文献阅读、学术写作、科研图形、学术演示四大板块，以及工作台与评测工具、可靠 Skill 与云端流水线，并新增竞赛作战、对抗式生成、提交运维、双 Agent 协同。"
+        "en": "Practical guidance for real scientific tasks: literature reading/extraction, systematic search, knowledge libraries, data analysis, experiment design, research synthesis & peer review, academic writing workflow, paper-to-slides, plus workbench tooling and agent pipelines.",
+        "zh": "面向真实科研任务的技能经验：文献阅读与抽取、系统检索、知识库、数据分析、实验设计、研究综合与审查、学术写作全流程、论文转 PPT，以及工作台与 Agent 流水线。"
       },
       "icon": "https://raw.githubusercontent.com/Richard-He-happy/sci-agent/main/plugins/sci-agent/icon.svg",
       "author": "sci-agent",
@@ -117,18 +141,21 @@
           "scientific-figures",
           "academic-presentations",
           "agent-skills",
-          "competition-arena",
-          "adversarial-generation",
-          "submission-ops",
-          "collaboration"
+          "literature-extraction",
+          "systematic-search",
+          "knowledge-library",
+          "data-analysis",
+          "experiment-design",
+          "research-synthesis",
+          "writing-workflow",
+          "paper-to-slides"
         ],
         "labels": [
           "workbench",
           "agent-pipelines",
-          "competition-arena",
-          "adversarial-generation",
-          "submission-ops",
-          "collaboration"
+          "literature-extraction",
+          "knowledge-library",
+          "research-synthesis"
         ],
         "sortKeys": {
           "order": 10
