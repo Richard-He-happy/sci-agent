@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Scientific agent skills — general-purpose guidance for real research work.
  *
  * Bundles six domain skills: skill design, literature reading, academic
@@ -54,7 +54,7 @@ const ENTRIES = [
     name: 'sci-agent-pipelines',
     description:
       '用 Agent 批量构建科研技能与自动化流水线：任务书设计、云端/本地协作、打包白名单、确定性自检、版本回退与故障恢复。当需要把科研工作流批量化、自动化时使用。',
-  },,
+  },
   {
     dir: 'sci-literature-reading-extraction',
     name: 'sci-literature-reading-extraction',
